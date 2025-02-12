@@ -1,6 +1,6 @@
-package application;
+package atv_2025_02_10.application;
 import entities.Product;
-import entities.ShoppingCart;
+import atv_2025_02_10.entities.ShoppingCart;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class Exercise1 {
         Scanner sc = new Scanner(System.in);
         int option = 0;
         while (option != 7) {
-            System.out.println("Welcome to the shopping cart.");
+            System.out.println("Welcome to the shopping cart!.");
             System.out.println("1- Add Item to Cart");
             System.out.println("2- Remove Item from Cart");
             System.out.println("3- Display Cart content");

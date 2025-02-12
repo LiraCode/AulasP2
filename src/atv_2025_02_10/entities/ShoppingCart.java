@@ -1,4 +1,6 @@
-package entities;
+package atv_2025_02_10.entities;
+
+import entities.Product;
 
 import java.util.ArrayList;
 
