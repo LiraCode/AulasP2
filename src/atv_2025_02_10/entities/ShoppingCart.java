@@ -52,9 +52,6 @@ public class ShoppingCart {
         return CustomerID;
     }
 
-    public void setCustomerID(int customerID) {
-        this.CustomerID = customerID;
-    }
 
     public String getContents() {
         StringBuilder contents = new StringBuilder();
