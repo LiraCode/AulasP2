@@ -4,7 +4,7 @@
 Este repositório contém os exercícios e aplicações desenvolvidas durante as aulas de Programação 2 (P2) na Universidade Federal de Alagoas (UFAL) no semestre 2024.2. O foco do curso é a Programação Orientada a Objetos (POO), e a linguagem utilizada é Java.
 
 ## Estrutura do Repositório
-- **Application**: Contém os apps desenvolvidos em aula ou como tarefa
+- **application**: Contém os apps desenvolvidos em aula ou como tarefa
 - as tarefas estarão com **exerciseX** X = número da tarefa.
 - **entities** contém as classes com atributos e métodos dos objetos utilizado pelos apps
 
