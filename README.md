@@ -4,17 +4,17 @@
 Este repositório contém os exercícios e aplicações desenvolvidas durante as aulas de Programação 2 (P2) na Universidade Federal de Alagoas (UFAL) no semestre 2024.2. O foco do curso é a Programação Orientada a Objetos (POO), e a linguagem utilizada é Java.
 
 ## Estrutura do Repositório
-- **application**: Contém os apps desenvolvidos em aula ou como tarefa
-- as tarefas estarão com **exerciseX** X = número da tarefa.
-- **entities** contém as classes com atributos e métodos dos objetos utilizado pelos apps
+- As atividades estão na pasta **src**
+- cada atividade está em uma pasta no formato **atv_YYYY_MM_DD**. (Conforme solicitado pelo professor)
 
 ## Conteúdo
 ### Exercícios
-1. **Exercise1**: Implementar um ShoppingCart conforme diagrama UML.
-2. **Exercise2**: Ainda não divulgado .
-3. ...
+1. **atv_2025_02_10**: Implementar um ShoppingCart conforme diagrama UML.
+2. ... 
+
 
 ### Utilitários em sala de aula
+- estão na pasta **application**
 - **AreaCalculator**: Calcula diferentes áreas.
 - **TriangleCalc**: calculo de triângulos (primeiro exemplo).
 - ...
