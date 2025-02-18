@@ -1,5 +1,5 @@
 package atv_2025_02_10.application;
-import entities.Product;
+import atv_2025_02_10.entities.Product;
 import atv_2025_02_10.entities.ShoppingCart;
 
 import java.util.ArrayList;
@@ -10,25 +10,15 @@ public class Exercise1 {
         Scanner sc = new Scanner(System.in);
         int option = 0;
         while (option != 7) {
-            System.out.println("Welcome to the shopping cart!.");
-            System.out.println("1- Add Item to Cart");
-            System.out.println("2- Remove Item from Cart");
-            System.out.println("3- Display Cart content");
-            System.out.println("4- Get Item count from Cart");
-            System.out.println("5- Get Total Price from Cart");
-            System.out.println("6- Display CustomerID");
-            System.out.println("7- Exit");
-            System.out.println("Please enter a number to select option:");
-            option = sc.nextInt();
-            sc.nextLine(); // consume newline
-            String name;
-
+        option = getOption(sc);
+            
+        String brand;
             switch (option) {
                 case 1:
-                    System.out.println("Enter product name:");
-                    name = sc.nextLine();
+                    System.out.println("Enter product brand:");
+                    brand = sc.nextLine();
                     for (Product product : dbProducts) {
-                        if (product.getName().equals(name)) {
+                        if (product.getBrand().equals(brand)) {
                             myShoppingCart.addProduct(product);
                             break;
                         }
@@ -36,10 +26,10 @@ public class Exercise1 {
                     System.out.println("Product not Found!");
                     break;
                 case 2:
-                    System.out.println("Enter product name to remove:");
-                    name = sc.nextLine();
+                    System.out.println("Enter product brand to remove:");
+                    brand = sc.nextLine();
                     for (Product product : dbProducts) {
-                        if (product.getName().equals(name)) {
+                        if (product.getBrand().equals(brand)) {
                             myShoppingCart.removeProduct(product);
                             break;
                         }
@@ -48,14 +38,14 @@ public class Exercise1 {
                     break;
                 case 3:
                     System.out.println("Cart contents:");
-                    System.out.println(myShoppingCart.getContents());
+                    myShoppingCart.getContents();
                     break;
                 case 4:
-                    System.out.println("Enter product name to get count:");
-                    name = sc.nextLine();
+                    System.out.println("Enter product brand to get count:");
+                    brand = sc.nextLine();
                     for (Product product : dbProducts) {
-                        if (product.getName().equals(name)) {
-                            System.out.println("Quantity of " + product.getName() + " is: " + myShoppingCart.getItemCount(product));
+                        if (product.getBrand().equals(brand)) {
+                            System.out.println("Quantity of " + product.getBrand() + " is: " + myShoppingCart.getItemCount(product));
                             break;
                         }
                     }
@@ -79,6 +69,21 @@ public class Exercise1 {
             }
         }
     }
+    public static int getOption(Scanner sc) {
+        int option;
+        System.out.println("Welcome to the shopping cart!.");
+        System.out.println("1- Add Item to Cart");
+        System.out.println("2- Remove Item from Cart");
+        System.out.println("3- Display Cart content");
+        System.out.println("4- Get Item count from Cart");
+        System.out.println("5- Get Total Price from Cart");
+        System.out.println("6- Display CustomerID");
+        System.out.println("7- Exit");
+        System.out.println("Please enter a number to select option:");
+        option = sc.nextInt();
+        sc.nextLine(); // consume newline
+        return option;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -89,14 +94,12 @@ public class Exercise1 {
         int[] productsQuantity = new int[100];
 
         while (addProduct.equalsIgnoreCase("Y")) {
-            System.out.println("Enter the product name: ");
-            String name = sc.nextLine();
+            System.out.println("Enter the product brand: ");
+            String brand = sc.nextLine();
             System.out.println("Enter the product price: ");
             double price = sc.nextDouble();
-            System.out.println("Enter the product quantity: ");
-            int quantity = sc.nextInt();
             sc.nextLine(); // consume newline
-            Product p = new Product(name, price, quantity);
+            Product p = new Product(brand, price);
             products.add(p);
             System.out.println("The product was successfully added!");
             System.out.println("Do you want to add a new product? (Y/N)");
@@ -109,7 +112,7 @@ public class Exercise1 {
             System.out.println("Enter the CustomerID: ");
             int customerID = sc.nextInt();
             sc.nextLine(); // consume newline
-            ShoppingCart myShoppingCart = new ShoppingCart(customerID, products, productsQuantity);
+            ShoppingCart myShoppingCart = new ShoppingCart(customerID, products);
             shoppingCartMenu(myShoppingCart, products);
         } else {
             System.out.println("Ending the program!");
