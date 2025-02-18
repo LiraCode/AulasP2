@@ -91,7 +91,6 @@ public class Exercise1 {
         System.out.println("To test, add products to the store");
         String addProduct = "Y";
         ArrayList<Product> products = new ArrayList<>();
-        int[] productsQuantity = new int[100];
 
         while (addProduct.equalsIgnoreCase("Y")) {
             System.out.println("Enter the product brand: ");
