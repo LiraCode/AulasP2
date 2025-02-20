@@ -30,7 +30,6 @@ public class Exercise3 {
                System.out.print("Anual Income: ");
                anualIncome = sc.nextDouble();
                count++;
-               System.out.println(count);
 
                switch (type){
                    case "i":
@@ -55,6 +54,7 @@ public class Exercise3 {
 
 
        }
+        System.out.println();
            myTaxes.calcularContribuicoes();
 
     }
