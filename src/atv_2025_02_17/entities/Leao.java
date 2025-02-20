@@ -17,11 +17,13 @@ public class Leao {
 
     public void calcularContribuicoes(){
         double total = 0;
+        System.out.println("TAXES PAID:");
         for (Pessoa p : this.contribuintes) {
             double tax = p.calculaContribuicao();
             total += tax;
             System.out.println(p.getNome()+": $ "+new DecimalFormat("#,##0.00").format(tax));
         }
+            System.out.println();
         System.out.println("TOTAL TAXES: $ "+new DecimalFormat("#,##0.00").format(total));
     }
 }
