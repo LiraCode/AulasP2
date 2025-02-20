@@ -10,7 +10,6 @@ public class Leao {
         this.contribuintes = new ArrayList<>();
     }
 
-
     public void addPayer(Pessoa p) {
         this.contribuintes.add(p);
     }
