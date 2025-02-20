@@ -5,12 +5,13 @@ Este repositório contém os exercícios e aplicações desenvolvidas durante as
 
 ## Estrutura do Repositório
 - As atividades estão na pasta **src**
-- cada atividade está em uma pasta no formato **atv_YYYY_MM_DD**. (Conforme solicitado pelo professor)
+- cada atividade está em uma pasta no formato **atv_YYYY_MM_DD**. (Conforme solicitado pelo professor).
 
 ## Conteúdo
 ### Exercícios
-1. **atv_2025_02_10**: Implementar um ShoppingCart conforme diagrama UML.
-2. ... 
+1. **atv_2025_02_10**: Implementar um shopping cart conforme diagrama UML.
+2. **atv_2025_02_12**: incrementar o shopping cart adicionando sub classes a Product conforme diagrama UML.
+3. **atv_2025_02_17**: Resolver problema proposto em sala de aula. (Calcular impostos PF e PJ).
 
 
 ### Utilitários em sala de aula
@@ -31,8 +32,5 @@ Este repositório contém os exercícios e aplicações desenvolvidas durante as
 3. Abra os arquivos de exercícios e aplicações no seu IDE de preferência.
 
 4. Obs: Open JDK 23.0.2 
-
-
-
 
 
