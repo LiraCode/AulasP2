@@ -39,7 +39,7 @@ public class Account {
 
     public void deposit(double amount) {
         this.balance += amount;
-        System.out.println("Deposited " + amount + " to " + holderName);
+        System.out.println("Deposited " + amount + " to " + getHolderName() + ". Account: " + getNumberAccount());
     }
     public void withdraw(double amount) {
         double withdrawLimit = getWithdrawLimit();
